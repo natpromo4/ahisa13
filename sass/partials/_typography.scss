@@ -13,36 +13,36 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,
 .h1 {
-@include font-size($basefontsize * 2);
+font-size: $basefontsize * 2;
 line-height: 1.2;
 margin-bottom: $baselineheight / 2; }
 
 h2,
 .h2 {
-@include font-size($basefontsize * 1.5);
+font-size: $basefontsize * 1.5;
 line-height: 1.2;
 margin-bottom: $baselineheight / 2; }
 
 h3,
 .h3 {
-@include font-size($basefontsize * 1.3);
+font-size: $basefontsize * 1.3;
 line-height: 1.3;
 margin-bottom: $baselineheight / 1.5; }
 
 h4,
 .h4 {
-@include font-size($basefontsize * 1.25);
+font-size: $basefontsize * 1.25;
 line-height: 1.25;
 margin-bottom: $baselineheight; }
 
 h5,
 .h5 {
-@include font-size($basefontsize * 1.15); 
+font-size: $basefontsize * 1.15; 
 margin-bottom: $baselineheight;}
 
 h6,
 .h6 {
-@include font-size($basefontsize);
+font-size: $basefontsize;
 margin-bottom: $baselineheight;
 font-weight : normal;
 letter-spacing : 1px;
@@ -54,11 +54,11 @@ ul,
 dl,
 address {
 margin-bottom : $baselineheight;
-@include font-size($basefontsize);
+font-size: $basefontsize;
 line-height : $baselineheight; }
 
 small {
-@include font-size($basefontsize / 1.25); }
+font-size: $basefontsize / 1.25; }
 
 ul,
 ol {
@@ -69,7 +69,7 @@ li ul,
 li ol {
 list-style-type : none;
 margin : $baselineheight 0;
-@include font-size(16); }
+font-size: $basefontsize; }
 
 ul.inline,
 ol.inline {
@@ -175,7 +175,7 @@ word-wrap : break-word; }
 sub,
 sup {
 position : relative;
-@include font-size($basefontsize / 1.25);
+font-size: $basefontsize / 1.25;
 line-height : 0;
 vertical-align : baselineheight; }
 
@@ -186,13 +186,13 @@ sub {
 bottom : -.25em; }
 
 .lead {
-@include font-size($basefontsize * 1.15); }
+font-size: $basefontsize * 1.15; }
 
 .secondary {
-@include font-size($basefontsize / 1.15); }
+font-size: $basefontsize / 1.15; }
 
 .tertiary {
-@include font-size($basefontsize / 1.25); }
+font-size: $basefontsize / 1.25; }
 
 
 .footnotes {
@@ -200,7 +200,7 @@ bottom : -.25em; }
 li {
 margin-bottom : $baselineheight / 2;
 font-family : $altfontfamily;
-@include font-size($basefontsize / 1.3);
+font-size: $basefontsize / 1.3;
 line-height : 1.4; }
 
 }/*footnotes*/

@@ -8,7 +8,7 @@ $bordercolor: $textcolor;
 
 // fonts
 
-$font-size: 16;
+$font-size: 1em;
 
 $basefontfamily: 'humanst521_btroman', sans-serif;
 $altfontfamily: $basefontfamily;
@@ -23,3 +23,12 @@ $baseheadingfontcolor: $textcolor;
 // margins / padding etc 
 
 $gutterwidth: $basefontsize * 1.5;
+
+body {
+  width : 100%;
+  background-color : transparent;
+  font-family : $basefontfamily;
+  font-size: $basefontsize;
+  line-height : $baselineheight;
+  color : $textcolor;
+}
