@@ -1,0 +1,25 @@
+// colors
+
+$white: #ffffff;
+$black: #181818;
+$textcolor: $black;
+$lightneutralcolor: #f2f2f2;
+$bordercolor: $textcolor;
+
+// fonts
+
+$font-size: 16;
+
+$basefontfamily: 'humanst521_btroman', sans-serif;
+$altfontfamily: $basefontfamily;
+$basefontsize: $font-size;
+$baselineheight: 1.2;
+$basefontbackgroundcolor: $white;
+
+$baseheadingfont: $basefontfamily;
+$baseheadingfontweight: bold;
+$baseheadingfontcolor: $textcolor;
+
+// margins / padding etc 
+
+$gutterwidth: $basefontsize * 1.5;
