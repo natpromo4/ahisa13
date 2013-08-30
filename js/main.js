@@ -1,1 +1,5 @@
+$(function() {
 
+  $('#site-navigation').localScroll();
+
+});
