@@ -2,33 +2,61 @@
 
 $white: #ffffff;
 $black: #181818;
-$textcolor: $black;
-$lightneutralcolor: #f2f2f2;
-$bordercolor: $textcolor;
+$light-grey: #f2f2f2;
 
-// fonts
+$light-neutral-color: $light-grey;
 
-$font-size: 1em;
 
-$basefontfamily: 'humanst521_btroman', sans-serif;
-$altfontfamily: $basefontfamily;
-$basefontsize: $font-size;
-$baselineheight: 1.2;
-$basefontbackgroundcolor: $white;
+// base fonts
 
-$baseheadingfont: $basefontfamily;
-$baseheadingfontweight: bold;
-$baseheadingfontcolor: $textcolor;
+$base-font-size: 1em;
+$base-font-family: 'depot-new-web', sans-serif;
+$base-line-height: 1.3;
+$base-font-weight: 300;
+$base-font-bold: 500;
+$base-font-background-color: $light-neutral-color;
+$base-text-color: $black;
 
-// margins / padding etc 
+// alt fonts
 
-$gutterwidth: $basefontsize * 1.5;
+$alt-font-size: $base-font-size;
+$alt-font-family: $base-font-family;
+$alt-line-height: $base-line-height;
+$alt-font-weight: $base-font-weight;
+$alt-font-bold: $base-font-bold;
+$alt-text-color: $base-text-color;
+
+
+// base headings 
+
+$base-heading-font-family: $base-font-family;
+$base-heading-font-weight: $base-font-bold;
+$base-heading-font-color: $base-text-color;
+
+// alt headings
+
+$alt-heading-font-family: $base-font-family;
+$alt-heading-font-weight: $base-font-bold;
+$alt-heading-font-color: $base-text-color;
+
+
+// margins / padding etc
+
+$base-gutter-width: $base-font-size * 1.2;
+
+* {
+  @include box-sizing(border-box);
+  *behavior: url(../components/box-sizing-polyfill/boxsizing.htc);
+}
+
 
 body {
   width : 100%;
   background-color : transparent;
-  font-family : $basefontfamily;
-  font-size: $basefontsize;
-  line-height : $baselineheight;
-  color : $textcolor;
+  font-family : $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height : $base-line-height;
+  color : $base-text-color;
 }
+

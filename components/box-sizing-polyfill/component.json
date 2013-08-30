@@ -1,0 +1,9 @@
+{
+  "name": "box-sizing-polyfill",
+  "version": "0.0.0",
+  "commit": "ff1d7890761228c5552cde8f6601e57538dbd22d",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Schepp/box-sizing-polyfill.git"
+  }
+}

@@ -1,209 +1,111 @@
 h1, h2, h3, h4, h5, h6 {
-  margin : 0;
-  font-family : $baseheadingfont;
-  font-weight : $baseheadingfontweight;
-  color : $baseheadingfontcolor;
+  font-family : $base-heading-font-family;
+  font-weight : $base-heading-font-weight;
+  color : $base-heading-font-color;
   text-rendering : optimizelegibility;
-
-  small {
-    font-weight : normal;
-    line-height : 1;
-    color : $lightneutralcolor; }
 }
 
 h1,
 .h1 {
-font-size: $basefontsize * 2;
-line-height: 1.2;
-margin-bottom: $baselineheight / 2; }
+  font-size: $base-font-size * 2;
+  line-height: 1.2;
+  margin-bottom: ($base-line-height / 2) + em;
+}
 
 h2,
 .h2 {
-font-size: $basefontsize * 1.5;
-line-height: 1.2;
-margin-bottom: $baselineheight / 2; }
+  font-size: $base-font-size * 1.5;
+  line-height: 1.2;
+  margin-bottom: ($base-line-height / 2) + em;
+}
 
 h3,
 .h3 {
-font-size: $basefontsize * 1.3;
-line-height: 1.3;
-margin-bottom: $baselineheight / 1.5; }
+  font-size: $base-font-size * 1.3;
+  line-height: 1.3;
+  margin-bottom: ($base-line-height / 1.5) + em;
+}
 
 h4,
 .h4 {
-font-size: $basefontsize * 1.25;
-line-height: 1.25;
-margin-bottom: $baselineheight; }
+  font-size: $base-font-size * 1.25;
+  line-height: 1.25;
+  margin-bottom: ($base-line-height) + em;
+}
 
 h5,
 .h5 {
-font-size: $basefontsize * 1.15; 
-margin-bottom: $baselineheight;}
+  font-size: $base-font-size * 1.15; 
+  margin-bottom: ($base-line-height) + em;
+}
 
 h6,
 .h6 {
-font-size: $basefontsize;
-margin-bottom: $baselineheight;
-font-weight : normal;
-letter-spacing : 1px;
-text-transform : uppercase; }
+  font-size: $base-font-size;
+  margin-bottom: ($base-line-height) + em;
+  font-weight : normal;
+  letter-spacing : 1px;
+  text-transform : uppercase;
+} 
 
 p,
 ol,
 ul,
 dl,
 address {
-margin-bottom : $baselineheight;
-font-size: $basefontsize;
-line-height : $baselineheight; }
+  margin-bottom : ($base-line-height) + em;
+  font-size: $base-font-size;
+  line-height : $base-line-height;
+}
 
 small {
-font-size: $basefontsize / 1.25; }
+  font-size: $base-font-size / 1.25;
+}
 
 ul,
 ol {
-margin : 0 0 $baselineheight #{-$gutterwidth};
-padding : 0 0 0 $gutterwidth; }
+  margin : 0 0 $base-line-height #{-$base-gutter-width};
+  padding : 0 0 0 $base-gutter-width;
+}
 
 li ul,
 li ol {
-list-style-type : none;
-margin : $baselineheight 0;
-font-size: $basefontsize; }
+  list-style-type : none;
+  margin : $base-line-height 0;
+  font-size: $base-font-size;
+}
 
 ul.inline,
 ol.inline {
-list-style-type : none;
-margin-left : 0;
-& > li {
-display : inline-block;
-padding-left : $gutterwidth / 2;
-padding-right : $gutterwidth / 2; }
+  list-style-type : none;
+  margin-left : 0;
+
+  & > li {
+    display : inline-block;
+    padding-left : $base-gutter-width / 2;
+    padding-right : $base-gutter-width / 2; }
 }
-
-// blockquote
-
-blockquote  {
-margin : 0 0 $baselineheight 0;
-padding : $gutterwidth / 2;
-background-color : $basefontbackgroundcolor;
-font-style : normal;
-
-small {
-&:before {
-content : '\00A0 \2014'; }
-
-&:after {
-content : ''; }
-}
-
-&.pull-right {
-float : right;
-background-color : transparent;
-
-p, small {
-text-align : right; }
-
-small {
-&:before {
-content : ''; }
-
-&:after {
-content : '\00A0 \2014'; }
-}
-}
-
-cite {
-font-style : normal; }
-}
-
-q {
-quotes : none; }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-content : '';
-content : none; }
-
-dl,
-dd {
-margin-bottom : $baselineheight;  }
 
 dt {
-font-weight : bold; }
-
-.dl-horizontal {
-@include clearfix;
-
-dt {
-float : left;
-clear : left;
-width : 30.38869258%; }
-
-dd {
-margin-left : 32.99289258%; }
+  font-weight: $base-font-bold;
 }
 
-abbr[title] {
-border-bottom : 1px dotted $bordercolor;
-cursor : help; }
+dd + dt {
+  margin-top: $base-gutter-width;
+}
+
 
 b, strong {
-font-weight : bold; }
-
-dfn {
-font-style : italic; }
-
-ins {
-background-color : $basefontbackgroundcolor;
-color : $textcolor;
-text-decoration : none; }
-
-mark {
-background-color : $basefontbackgroundcolor;
-color : $textcolor;
-font-style : italic;
-font-weight : bold; }
-
-pre {
-white-space : pre;
-white-space : pre-wrap;
-word-wrap : break-word; }
-
-sub,
-sup {
-position : relative;
-font-size: $basefontsize / 1.25;
-line-height : 0;
-vertical-align : baselineheight; }
-
-sup {
-top : -.5em; }
-
-sub {
-bottom : -.25em; }
+  font-weight : $base-font-bold;
+}
 
 .lead {
-font-size: $basefontsize * 1.15; }
+font-size: $base-font-size * 1.15; }
 
 .secondary {
-font-size: $basefontsize / 1.15; }
+  font-size: $base-font-size / 1.15;
+}
 
 .tertiary {
-font-size: $basefontsize / 1.25; }
-
-
-.footnotes {
-
-li {
-margin-bottom : $baselineheight / 2;
-font-family : $altfontfamily;
-font-size: $basefontsize / 1.3;
-line-height : 1.4; }
-
-}/*footnotes*/
-
-.spaced {
-letter-spacing : 1px; }
+  font-size: $base-font-size / 1.25;
+}
