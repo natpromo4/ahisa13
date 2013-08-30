@@ -1,0 +1,8 @@
+.top-link {
+
+  @media screen and (min-width: 48em) {
+
+    // only show the 'top' link when the nav is at the bottom
+    display: none;
+  }
+}
