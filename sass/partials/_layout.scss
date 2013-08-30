@@ -1,6 +1,10 @@
+.page {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .l-wrap {
   margin: 0 auto;
-  max-width: 1024px;
   padding: 0 4%;
 
   @media screen and (min-width: 48em) {
@@ -11,4 +15,26 @@
 .l-panel {
   margin-bottom: $base-gutter-width;
 }
+
+.main {
+
+  @media screen and (min-width: 48em) {
+    float: right;
+    width: 50%;
+  }
+}
+
+.navigation {
+
+  @media screen and (min-width: 48em) {
+    float: left;
+    width: 50%;
+  }
+}
+
+.site-footer {
+  clear: both;
+}
+
+
 
