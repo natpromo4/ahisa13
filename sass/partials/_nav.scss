@@ -1,3 +1,11 @@
+.menu-link {
+  margin-bottom: $base-gutter-width;
+
+  @media screen and (min-width: 48em) {
+    display: none;
+  }
+}
+
 .top-link {
 
   @media screen and (min-width: 48em) {
