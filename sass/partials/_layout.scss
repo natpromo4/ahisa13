@@ -20,7 +20,7 @@
 
   @media screen and (min-width: 48em) {
     float: right;
-    width: 50%;
+    width: 72%;
   }
 }
 
@@ -28,7 +28,8 @@
 
   @media screen and (min-width: 48em) {
     float: left;
-    width: 50%;
+    width: 28%;
+    max-width: 287px;
   }
 }
 
